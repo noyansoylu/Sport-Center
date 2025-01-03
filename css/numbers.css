@@ -1,0 +1,44 @@
+#numbers {
+    background-color: var(--background-color-1);
+}
+
+.numbers-list {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.num-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+}
+
+.num-box h4 {
+    margin: 0;
+    color: var(--color-bluish);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.num-box p {
+    margin: 10px 0 0;
+    font-weight: bolder;
+    color: 333;
+    font-size: 1.75rem;
+}
+
+@media (max-width: 576.98px) {
+    .numbers-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}

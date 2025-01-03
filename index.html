@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Center</title>
+  <link rel="stylesheet" href="./vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header id="header" class="fixed-top header">
+    <div class="container">
+      <div class="navbar-line">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav id="navbar" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav"
+              aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#our-classes">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#trainers">Trainer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#review">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <button class="join-btn">JOIN US</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span>POWERFULL</span>
+        <h2>Group <br>Practice</h2>
+        <h2>With Trainer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quaerat dignissimos voluptatum iste id ut dolor
+          aspernatur consequuntur est, eligendi accusantium molestias perspiciatis sapiente eaque tenetur quidem unde
+          quae odio?</p>
+        <div class="hero-info">
+          <button class="sign-up">Sign Up</button>
+          <button class="details">Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="numbers">
+    <div class="container">
+      <div class="numbers-list">
+        <div class="num-box">
+          <h4>325</h4>
+          <p>Course</p>
+        </div>
+        <div class="num-box">
+          <h4>405</h4>
+          <p>Work Out</p>
+        </div>
+        <div class="num-box">
+          <h4>305</h4>
+          <p>Working Hour</p>
+        </div>
+        <div class="num-box">
+          <h4>705</h4>
+          <p>Happy Client</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="our-classes">
+    <div class="container">
+      <div class="our-class-header">
+        <h3>OUR CLASSES</h3>
+        <span></span>
+        <p>Lorem Ipsum is not simply random text. It has roots in a place of classical at <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="tabs">
+        <button class="tab active" onclick="changeImage('./images/yoga.jpg', this, false), changeText1()">Yoga</button>
+        <button class="tab" onclick="changeImage('./images/group.webp', this, true), changeText2()">Group</button>
+        <button class="tab" onclick="changeImage('./images/solo.jpg', this, false), changeText3()">Solo</button>
+        <button class="tab" onclick="changeImage('./images/stret.webp', this, true), changeText4()">Stretching</button>
+      </div>
+      <div class="class-content" id="class-section">
+        <div class="class-text">
+          <h2 id="textH">Why are your Yoga?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam minus, hic cum sit delectus distinctio odit fuga ad mollitia ex, corrupti autem quidem repellendus quae officia provident commodi nostrum.</p>
+          <h2 id="textH2">When comes Yoga Your Time.</h2>
+          <p>Saturday-Sunday: 8:00am - 10:00am</p>
+          <p>Monday-Tuesday: 10:00am - 12:00pm</p>
+          <p>Wednesday-Friday: 3:00pm - 6:00pm</p>
+        </div>
+        <div>
+          <img src="./images/yoga.jpg" alt="" id="class-image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="bmi-calculator">
+    <div class="container">
+      <div class="bmi-section">
+        <div class="calculator">
+          <h2>BMI Calculator</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas adipisci necessitatibus harum eaque corrupti consectetur, hic commodi, dolorem neque cupiditate est. Quidem corporis voluptate harum in, recusandae aliquid doloremque sunt!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, sit molestiae! Eaque, explicabo cum deserunt dicta fuga in a, non neque blanditiis maxime, error est recusandae assumenda distinctio sit? Quisquam!</p>
+          <div class="input-section">
+            <div class="d-flex">
+              <input type="number" id="height" placeholder="Your Height">
+              <span class="my-auto">cm</span>
+            </div>
+            <div class="d-flex">
+              <input type="number" id="weight" placeholder="Your Weight">
+              <span class="my-auto">kg</span>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <h2 id="bmiResult">Your BMI</h2>
+          <div class="bmi-scale">
+            <img src="./images/bmi-index.jpg" class="img-fluid" alt="BMI Scale">
+            <div class="triangle" id="triangle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="trainers">
+    <div class="container">
+      <div class="trainers-header">
+        <h3>OUR BEST TRAINERS</h3>
+        <span></span>
+        <p>Lorem Ipsum is not simply random text. It has roots in a place of classical at <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="trainer-cards">
+        <div class="trainer-images">
+          <img src="./images/trainer1.jpg" class="img-fluid" alt="">
+          <div class="left-bar"></div>
+          <div class="right-bar"></div>
+          <div class="top-bar"></div>
+          <div class="bottom-bar"></div>
+          <div class="trainer-info pt-5">
+            <h5><br>Jennie Doe</h5>
+            <p>Fitness Trainer</p>
+          </div>
+        </div>
+        <div class="trainer-images">
+          <img src="./images/trainer2.jpg" class="img-fluid" alt="">
+          <div class="left-bar"></div>
+          <div class="right-bar"></div>
+          <div class="top-bar"></div>
+          <div class="bottom-bar"></div>
+          <div class="trainer-info pt-5">
+            <h5><br>John Doe</h5>
+            <p>Lifting Trainer</p>
+          </div>
+        </div>
+        <div class="trainer-images">
+          <img src="./images/trainer3.jpg" class="img-fluid" alt="">
+          <div class="left-bar"></div>
+          <div class="right-bar"></div>
+          <div class="top-bar"></div>
+          <div class="bottom-bar"></div>
+          <div class="trainer-info pt-5">
+            <h5><br>Jane Doe</h5>
+            <p>Cardio Trainer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="purchase">
+    <div class="container">
+      <div class="purchase-header">
+        <h3>PURCHASE FROM US</h3>
+        <span></span>
+        <p>Lorem Ipsum is not simply random text. It has roots in a place of classical at <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card purchase-cards shadow-lg">
+            <img src="./images/purchase1.jpg" class="card-img-top" alt="purchase1">
+            <div class="card-body">
+              <h5 class="card-title">Kettlebell / 5kg</h5>
+              <p class="card-text"><span class="text-decoration-line-through">89.99$</span> / 59.99$</p>
+              <p class="card-text cart-container"><i class="bi bi-cart-fill"></i><span style="cursor: pointer;">Add To Cart</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card purchase-cards shadow-lg">
+            <img src="./images/purchase2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Treadmill</h5>
+              <p class="card-text"><span class="text-decoration-line-through">899.99$</span> / 599.99$</p>
+              <p class="card-text cart-container"><i class="bi bi-cart-fill"></i><span style="cursor: pointer;">Add To Cart</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card purchase-cards shadow-lg">
+            <img src="./images/purchase3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Adjustable Dumbbell</h5>
+              <p class="card-text"><span class="text-decoration-line-through">89.99$</span> / 59.99$</p>
+              <p class="card-text cart-container"><i class="bi bi-cart-fill"></i><span style="cursor: pointer;">Add To Cart</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card purchase-cards shadow-lg">
+            <img src="./images/purchase4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kettlebell / 3kg</h5>
+              <p class="card-text"><span class="text-decoration-line-through">89.99$</span> / 59.99$</p>
+              <p class="card-text cart-container"><i class="bi bi-cart-fill"></i><span style="cursor: pointer;">Add To Cart</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="review">
+    <div class="container">
+      <div class="review-header">
+        <h3>REVIEW CLIENT</h3>
+        <span></span>
+        <p>Lorem Ipsum is not simply random text. It has roots in a place of classical at <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="review-part row row-gap-5">
+        <div class="col-12 col-md-6">
+          <div class="d-flex">
+            <img src="./images/client1.jpg" alt="Client1" class="client-img">
+            <p class="ps-3"><span class="fw-semibold">Diet Expert</span> <br>CFO</p>
+          </div>
+          <div class="comment">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, aliquam itaque in perspiciatis nostrum repellat, consequatur ex aliquid voluptatum dolore laborum quae delectus id totam assumenda accusantium, unde eos facere?
+          </div>
+        </div>
+        <div class="col12 col-md-6">
+          <div class="d-flex">
+            <img src="./images/client2.jpg" alt="client2" class="client-img">
+            <p class="ps-3"><span class="fw-semibold">Cardio Trainer</span> <br>CEO</p>
+          </div>
+          <div class="comment">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur eaque quo molestiae consequatur maxime deleniti voluptatum sed, nisi incidunt! Odit dolor eaque voluptate a excepturi perspiciatis atque, voluptates cum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="contact-header">
+        <h3>CONTACT US</h3>
+        <span></span>
+        <p>Lorem Ipsum is not simply random text. It has roots in a place of classical at <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="d-flex column-gap-5 contact-info">
+            <div>
+              <h3>Mobile Number</h3>
+              <p>+135 773 321 4442</p>
+            </div>
+            <div>
+              <h3>Email Address</h3>
+              <p>demo@demo.com</p>
+            </div>
+          </div>
+          <div class="form-section">
+            <h2>Make An Appointment</h2>
+            <form action="#">
+              <input type="name" placeholder="Your Name"><br>
+              <input type="email" placeholder="Your Email"><br>
+              <textarea name="text" placeholder="Your Message" rows="5" cols="auto"></textarea>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1257.246734179817!2d-70.55902985444244!3d41.45541635476562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1str!2str!4v1735752716744!5m2!1str!2str" class="google-map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <img src="./images/logo.png" alt="Logo">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit mollitia autem iusto, deleniti asperiores voluptate quisquam officia sunt provident laboriosam molestiae nemo quod neque soluta dolorum dolore et nostrum aspernatur?</p>
+    </div>
+    <div class="footer-links row-gap-3">
+      <div class="link-list row-gap-2">
+        <h3>Information</h3>
+        <a href="#home">About Us</a>
+        <a href="#our-classes">Classes</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="link-list row-gap-2">
+        <h3>Helpful Links</h3>
+        <a href="#">Services</a>
+        <a href="#">Supports</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

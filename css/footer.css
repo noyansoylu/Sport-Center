@@ -1,0 +1,27 @@
+#footer {
+    background-color: var(--color-bluish);
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 24px;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.link-list h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
